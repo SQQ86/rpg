@@ -26,7 +26,7 @@ abstract class Hero {
     public abstract void defense(Enemy enemy);// этот метод должнен быть определен в классах наследниках
 
     public void openItem(Item item){
-        if (0+(Math.random()*100)>=50){
+        if (0+(Math.random()*100)>=50){ //MYCODE
             items.add(item);// метод должен добавлять предмет в список с вероятностью 50 %
         }
 

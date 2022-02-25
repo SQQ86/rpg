@@ -11,7 +11,7 @@ class Magician extends Hero {
         this.damage = 40;
 
 
-        ;//базовые значение
+        ;// MYCODE! базовые значение
 
     }
 
@@ -43,7 +43,7 @@ class Magician extends Hero {
         }
 
 
-    }
+    } //MYCODE!
 
     @Override
     public void defense(Enemy enemy) {
@@ -64,7 +64,7 @@ class Magician extends Hero {
 
 
 
-    }
+    } //MYCODE!
     /*
         класс должен обладать всеми свойствами героя при создании маг должен обладать следующими характеристиками: здоровье - 100, мана - 5000, сила - 5, ловкость - 30, интеллект - 300, опыт 0, урон - 40.
     атака по аналогии с воином
@@ -76,7 +76,7 @@ class Magician extends Hero {
         if (!casts.isEmpty()){
             this.mana = this.mana-100;
             enemy.hp = enemy.hp - 1000;
-            // если в списке есть заклятия можно его произнести потратив 100 маны и нанеся 1000 урона цели.
+            // MYCODE! если в списке есть заклятия можно его произнести потратив 100 маны и нанеся 1000 урона цели.
         }
         // после произнесения предмет из списка пропадает
     }
@@ -84,7 +84,7 @@ class Magician extends Hero {
 public void openItem (Item item) {
     if (0+(Math.random()*100)>=50){
         items.add(item);
-        eduCast(item);// метод должен добавлять предмет в список с вероятностью 50 %
+        eduCast(item);// MYCODE! метод должен добавлять предмет в список с вероятностью 50 %
     }
 
     }
@@ -94,11 +94,11 @@ public void openItem (Item item) {
                 casts.add(item);
 
             }
-        }
+        } //MYCODE!
                 /*
                 если предмет или предметы из списка имеют тип 2, это заклинания и их нужно добавить в список
 заклинаний мага
                 */
 
 
-}
+}//MYCODE
